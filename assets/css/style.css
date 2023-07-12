@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family:'Times New Roman', Times, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 50em;
+    background-color: black;
+}
+
+h1 {
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+main {
+    max-width: 48em;
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.players {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.players div {
+    padding: 2em;
+    border: 1em solid #2c2c2c;
+    display: grid;
+    place-items: center;
+    border-radius: 1em;
+    gap: 1em;
+}
+
+.players img {
+    width: 15em;
+}
+
+button {
+    padding: 0.2em em;
+    width: 20%;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: black;
+    transition: all 0.4s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#result {
+    width: 90%;
+    height: 6em;
+    border: 2px dotted #2c2c2c;
+    border-radius: 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2em auto;
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 50em) {
+    main,
+    .result {
+        width: 95%;
+    }
+
+    .players {
+        flex-direction: column;
+    }
+}
